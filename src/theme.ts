@@ -10,7 +10,7 @@ let theme = createTheme({
       main: "#7419E2", //
     },
     background: {
-      default: "#ffffff", 
+        default: "#E4E4E4", 
     },
     text: {
       primary: "#000000", 
