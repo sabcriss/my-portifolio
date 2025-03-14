@@ -1,5 +1,5 @@
 import { AppBar, MenuItem, Toolbar } from "@mui/material";
-import { styled } from "@mui/system"; // Certifique-se que importou o styled corretamente
+import { styled } from "@mui/system";
 import theme from "../../../../theme";
 
 const NavBar: React.FC = () => {
@@ -7,10 +7,11 @@ const NavBar: React.FC = () => {
     const StyledToolbar = styled(Toolbar)(({ theme }) => ({
         display: "flex",
         justifyContent: "space-evenly",
+        padding: theme.spacing(1), 
     }));
 
     return (
-        <AppBar position="relative">
+        <AppBar position="fixed">
             <StyledToolbar>
                 <MenuItem>About</MenuItem>
                 <MenuItem>Skills</MenuItem>

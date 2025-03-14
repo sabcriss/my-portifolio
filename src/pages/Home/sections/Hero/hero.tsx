@@ -11,14 +11,22 @@ const StyledHero = styled("div")(({ theme }) => ({
   padding: "20px",
   display: "flex",
   alignItems: "center",
-  position: "relative", // Certifique-se de que os elementos fiquem acima do fundo
-  zIndex: 1, // Isso mantém os textos visíveis
+  position: "relative",
+  zIndex: 1,
+
+  [theme.breakpoints.up('xs')]: {
+    paddingTop: "100px",
+  },
+
+  [theme.breakpoints.up('md')]: {
+    paddingTop: "100px",
+  },
 }));
 
 const StyledImg = styled("img")({
-  width: "100%",
+  maxWidth: "100%",
+  height: "auto",
   borderRadius: "50%",
-  objectFit: "cover",
   border: "1px #7419E2 solid",
 });
 
@@ -39,17 +47,30 @@ const Hero = () => {
               I'm a software engineer
             </Typography>
             <Typography variant="body1" textAlign="justify">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
             </Typography>
 
+            {/* Ajuste aqui para colocar os botões lado a lado */}
             <Grid container spacing={2} justifyContent="center" mt={2}>
               <Grid item>
-                <Button variant="contained" color="secondary" startIcon={<DownloadIcon />}>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  startIcon={<DownloadIcon />}
+                  component="a"
+                  href="/caminho-do-cv"
+                >
                   Download CV
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="contained" color="secondary" startIcon={<PermContactCalendarIcon />}>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  startIcon={<PermContactCalendarIcon />}
+                  component="a"
+                  href="/contato"
+                >
                   Contact me
                 </Button>
               </Grid>
