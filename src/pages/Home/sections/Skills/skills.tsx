@@ -7,7 +7,6 @@ import AnimatedBackground from "../../../../assets/Images/Components/AnimatedBac
 
 const StyledHero = styled("div")(({ theme }) => ({  
   backgroundColor: theme.palette.background.default,
-  height: "70vh",
   padding: "20px",
   display: "flex",
   alignItems: "center",
@@ -30,7 +29,7 @@ const StyledImg = styled("img")({
   border: "1px #7419E2 solid",
 });
 
-const Hero = () => {
+const Skills = () => {
   return (
     <StyledHero>
       <AnimatedBackground /> {/* Adiciona o fundo animado */}
@@ -51,30 +50,6 @@ const Hero = () => {
             </Typography>
 
             {/* Ajuste aqui para colocar os botões lado a lado */}
-            <Grid container spacing={2} justifyContent="center" mt={2}>
-              <Grid item>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  startIcon={<DownloadIcon />}
-                  component="a"
-                  href="/caminho-do-cv"
-                >
-                  Download CV
-                </Button>
-              </Grid>
-              <Grid item>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  startIcon={<PermContactCalendarIcon />}
-                  component="a"
-                  href="/contato"
-                >
-                  Contact me
-                </Button>
-              </Grid>
-            </Grid>
           </Grid>
         </Grid>
       </Container>
@@ -82,4 +57,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Skills;
