@@ -9,9 +9,9 @@ const StyledBox = styled(Box)({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: "150px",  // Defina um tamanho fixo
-  height: "30px",   // Tamanho fixo também para altura
-  margin: "10px 0",  // Espaçamento entre os boxes
+  width: "150px",
+  height: "30px",
+  margin: "10px 0",
 });
 
 const Skills = () => {
