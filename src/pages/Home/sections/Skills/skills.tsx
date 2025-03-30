@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Typography, Grid, Box, Divider } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Container, Typography, Grid, Box } from "@mui/material";
+import { styled } from "@mui/material";
 
 const StyledBox = styled(Box)({
   border: "1px solid black",
@@ -9,86 +9,78 @@ const StyledBox = styled(Box)({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: "150px",
-  height: "30px",
-  margin: "10px 0",
+  width: "150px",  // Defina um tamanho fixo
+  height: "30px",   // Tamanho fixo também para altura
+  margin: "10px 0",  // Espaçamento entre os boxes
 });
 
 const Skills = () => {
   return (
     <Container sx={{ padding: "20px" }}>
-      {/* Título principal */}
-      <Typography
-        variant="h6"
-        sx={{
-          textAlign: { xs: "center", md: "left" }, // Centralizado no mobile, alinhado à esquerda no desktop
-          marginBottom: "10px",
-        }}
-      >
-        EXPERIENCE E EDUCATION
-      </Typography>
-      <Typography
-        variant="h2"
-        fontWeight="bold"
-        sx={{
-          textAlign: { xs: "center", md: "left" }, // Centralizado no mobile, alinhado à esquerda no desktop
-          marginBottom: "40px",
-        }}
-      >
-        My Resume
-      </Typography>
+      <div>
+        <Typography variant="h6">EXPERIENCE E EDUCATION</Typography>
+        <Typography variant="h2" fontWeight="bold">My Resume</Typography>
+      </div>
 
-      {/* Container principal responsivo */}
-      <Grid container spacing={4}>
-        {/* Seção de Experiência */}
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" align="center" sx={{ marginBottom: "20px" }}>Experience</Typography>
-          <Divider sx={{ marginBottom: "20px" }} />
-          <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6" fontWeight="bold">Executiva de vendas PL</Typography>
-            <Typography sx={{ fontSize: "15px", marginBottom: "10px" }}>Atendimento a clientes B2B</Typography>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <StyledBox>
+      <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "20px" }}>
+        <Grid container item xs={5}>
+          <div style={{ width: '100%' }}>
+            <Typography variant="h6" fontWeight="bold">Experience</Typography>
+            <hr />
+          </div>
+          <Grid item xs={12} style={{ gap: "20px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px" }}>  
+              <div>
+                <Typography variant="h6" fontWeight="bold">Analista comercial PL</Typography>
+                <Typography sx={{ fontSize: "13px" }}>Atendimento a clientes B2B</Typography>
+              </div>
+
+              <StyledBox sx={{ maxWidth: "100px" }}>
                 <Typography sx={{ fontSize: "10px" }}>2024 - 2025</Typography>
               </StyledBox>
-            </Box>
-          </Box>
-          <Box sx={{ textAlign: "center", marginTop: "20px" }}>
-            <Typography variant="h6" fontWeight="bold">Representante serviços bancários</Typography>
-            <Typography sx={{ fontSize: "15px", marginBottom: "10px" }}>Atendimento a clientes B2B</Typography>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <StyledBox>
-                <Typography sx={{ fontSize: "10px" }}>2023 - 2025</Typography>
+            </div>
+
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px"}}>
+              <div>
+                <Typography variant="h6" fontWeight="bold">Representante serviços bancários</Typography>
+                <Typography sx={{ fontSize: "13px" }}>Atendimento a servidores públicos na utilização de serviços bancários</Typography>
+              </div>
+              <StyledBox sx={{ maxWidth: "100px" }}>
+                <Typography sx={{ fontSize: "10px" }}>2022 - 2023</Typography>
               </StyledBox>
-            </Box>
-          </Box>
+            </div>
+          </Grid>
         </Grid>
 
-        {/* Seção de Educação */}
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" align="center" sx={{ marginBottom: "20px" }}>Education</Typography>
-          <Divider sx={{ marginBottom: "20px" }} />
-          <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6" fontWeight="bold">Universidade Católica de Brasília</Typography>
-            <Typography sx={{ fontSize: "15px", marginBottom: "10px" }}>Engenharia de Software</Typography>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <StyledBox>
-                <Typography sx={{ fontSize: "10px" }}>2024</Typography>
+        {/* Segunda parte - Education */}
+        <Grid container item xs={5}>
+          <div style={{ width: '100%' }}>
+            <Typography variant="h6" fontWeight="bold">Education</Typography>
+            <hr />
+          </div>
+          <Grid item xs={12}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px" }}>
+              <div>
+                <Typography variant="h6" fontWeight="bold">Universidade Católica de Brasília</Typography>
+                <Typography sx={{ fontSize: "13px" }}>Engenharia de Software</Typography>
+              </div>
+              <StyledBox sx={{ maxWidth: "100px" }}>
+                <Typography sx={{ fontSize: "10px" }}>2024 - 2025</Typography>
               </StyledBox>
-            </Box>
-          </Box>
-          <Box sx={{ textAlign: "center", marginTop: "20px" }}>
-            <Typography variant="h6" fontWeight="bold">UDF Brasília</Typography>
-            <Typography sx={{ fontSize: "15px", marginBottom: "10px" }}>Engenharia Mecatrônica</Typography>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <StyledBox>
-                <Typography sx={{ fontSize: "10px" }}>2022</Typography>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px" }}>
+              <div>
+                <Typography variant="h6" fontWeight="bold">UDF Brasília</Typography>
+                <Typography sx={{ fontSize: "13px" }}>Engenharia Mecatrônica</Typography>
+              </div>
+              <StyledBox sx={{ maxWidth: "100px" }}>
+                <Typography sx={{ fontSize: "10px" }}>2021 - 2023</Typography>
               </StyledBox>
-            </Box>
-          </Box>
+            </div>
+          </Grid>
         </Grid>
-      </Grid>
-    </Container>
+      </div>
+    </Container >
   );
 };
 
