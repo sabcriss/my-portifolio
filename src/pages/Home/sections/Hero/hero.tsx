@@ -8,7 +8,7 @@ import { styled } from "@mui/system";
 
 const StyledHero = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
-  minHeight: "70vh", // Usando minHeight em vez de height fixo
+  minHeight: "70vh",
   padding: theme.spacing(4),
   display: "flex",
   alignItems: "center",
@@ -16,8 +16,8 @@ const StyledHero = styled("div")(({ theme }) => ({
   zIndex: 1,
 
   [theme.breakpoints.down('sm')]: {
-    paddingTop: "80px", // Ajuste para telas pequenas
-    paddingBottom: "80px", // Adicionado para evitar sobreposição
+    paddingTop: "80px",
+    paddingBottom: "80px",
   },
 }));
 
@@ -30,16 +30,14 @@ const StyledImg = styled("img")({
 
 const Hero = () => {
   return (
-    <StyledHero>
-      <AnimatedBackground /> {/* Adiciona o fundo animado */}
+    <StyledHero id="about" data-aos="fade-up">
+      <AnimatedBackground />
       <Container>
         <Grid container spacing={4} alignItems="center">
-          {/* Imagem do Avatar */}
           <Grid item xs={12} md={5} lg={4} xl={3} textAlign="center">
             <StyledImg src={Avatar} alt="Avatar" />
           </Grid>
 
-          {/* Texto e Botões */}
           <Grid item xs={12} md={7} lg={8} xl={9}>
             <Typography variant="h2" textAlign="center" sx={{ mb: 2 }}>
               Sabrina Cristina
@@ -48,10 +46,12 @@ const Hero = () => {
               I'm a software engineer
             </Typography>
             <Typography variant="body1" textAlign="justify" sx={{ mb: 4 }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.
+              Olá! Sou Sabrina Cristina, tenho 22 anos e estou no 3º semestre de Engenharia de Software. Tenho interesse em desenvolvimento Full Stack e estou em busca de oportunidades na área de TI.
+
+              Possuo conhecimentos em HTML, CSS, C, JavaScript, React e uso o Figma para prototipação. Também estudo TypeScript, APIs, banco de dados e metodologias ágeis como Scrum. Tenho projetos pessoais e acadêmicos que reforçam minha prática e interesse na área.
+
             </Typography>
 
-            {/* Botões */}
             <Grid container spacing={2} justifyContent="center">
               <Grid item>
                 <Button
