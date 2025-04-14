@@ -1,87 +1,48 @@
+import { Container, Grid, LinearProgress, Typography } from "@mui/material";
 import React from "react";
-import { Container, Typography, Grid, Box } from "@mui/material";
-import { styled } from "@mui/material";
-
-const StyledBox = styled(Box)({
-  border: "1px solid black",
-  padding: "2px 5px",
-  borderRadius: "8px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "150px",
-  height: "30px",
-  margin: "10px 0",
-});
 
 const Skills = () => {
-  return (
-    <Container sx={{ padding: "20px" }}>
-      <div>
-        <Typography variant="h6">EXPERIENCE E EDUCATION</Typography>
-        <Typography variant="h2" fontWeight="bold">My Resume</Typography>
-      </div>
+    return (
+        <Container id="skills" sx={{ padding: "20px", marginTop: "20px" }} data-aos="fade-up">
 
-      <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "20px" }}>
-        <Grid container item xs={5}>
-          <div style={{ width: '100%' }}>
-            <Typography variant="h6" fontWeight="bold">Experience</Typography>
-            <hr />
-          </div>
-          <Grid item xs={12} style={{ gap: "20px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px" }}>  
-              <div>
-                <Typography variant="h6" fontWeight="bold">Analista comercial PL</Typography>
-                <Typography sx={{ fontSize: "13px" }}>Atendimento a clientes B2B</Typography>
-              </div>
-
-              <StyledBox sx={{ maxWidth: "100px" }}>
-                <Typography sx={{ fontSize: "10px" }}>2024 - 2025</Typography>
-              </StyledBox>
+            <div style={{ paddingLeft: "20px" }}>
+                <Typography variant="h6">My top</Typography>
+                <Typography variant="h2" fontWeight="bold">Skills</Typography>
             </div>
 
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px"}}>
-              <div>
-                <Typography variant="h6" fontWeight="bold">Representante serviços bancários</Typography>
-                <Typography sx={{ fontSize: "13px" }}>Atendimento a servidores públicos na utilização de serviços bancários</Typography>
-              </div>
-              <StyledBox sx={{ maxWidth: "100px" }}>
-                <Typography sx={{ fontSize: "10px" }}>2022 - 2023</Typography>
-              </StyledBox>
-            </div>
-          </Grid>
-        </Grid>
+            <Grid container spacing={3} sx={{ marginTop: 3 }}>
+                <Grid item xs={12} sm={6}>
+                    <Typography variant="body1">
+                        Atuo há alguns anos na área comercial, o que me proporcionou uma excelente comunicação, facilidade para trabalhar em equipe e foco em resultados. Tenho facilidade em lidar com pessoas e me adaptar a diferentes contextos, habilidades que carrego comigo também na área de tecnologia.
 
-        {/* Segunda parte - Education */}
-        <Grid container item xs={5}>
-          <div style={{ width: '100%' }}>
-            <Typography variant="h6" fontWeight="bold">Education</Typography>
-            <hr />
-          </div>
-          <Grid item xs={12}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px" }}>
-              <div>
-                <Typography variant="h6" fontWeight="bold">Universidade Católica de Brasília</Typography>
-                <Typography sx={{ fontSize: "13px" }}>Engenharia de Software</Typography>
-              </div>
-              <StyledBox sx={{ maxWidth: "100px" }}>
-                <Typography sx={{ fontSize: "10px" }}>2024 - 2025</Typography>
-              </StyledBox>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px" }}>
-              <div>
-                <Typography variant="h6" fontWeight="bold">UDF Brasília</Typography>
-                <Typography sx={{ fontSize: "13px" }}>Engenharia Mecatrônica</Typography>
-              </div>
-              <StyledBox sx={{ maxWidth: "100px" }}>
-                <Typography sx={{ fontSize: "10px" }}>2021 - 2023</Typography>
-              </StyledBox>
-            </div>
-          </Grid>
-        </Grid>
-      </div>
-    </Container >
-  );
-};
+                        Como estudante de Engenharia de Software (3º semestre), estou construindo uma base sólida em lógica de programação, estrutura de dados e algoritmos, com bastante prática em linguagem C. Tenho interesse especial pelo desenvolvimento Front-End, onde já possuo bons conhecimentos em HTML e CSS, e estou me aprofundando em JavaScript, React e TypeScript. Além disso, tenho experiência com prototipação de interfaces no Figma, o que me ajuda a unir design e código de forma estratégica.
+
+                        Sou curiosa, proativa e estou sempre buscando aprender mais para evoluir como desenvolvedora.
+                    </Typography>
+                </Grid>
+
+                <Grid item xs={12} sm={6}>
+                    <Typography variant="body1">HTML</Typography>
+                    <LinearProgress variant="determinate" color="secondary" value={80} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+
+                    <Typography variant="body1">CSS</Typography>
+                    <LinearProgress variant="determinate" color="secondary" value={70} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+
+                    <Typography variant="body1">JavaScript</Typography>
+                    <LinearProgress variant="determinate" color="secondary" value={65} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+
+                    <Typography variant="body1">TypeScript</Typography>
+                    <LinearProgress variant="determinate" color="secondary" value={50} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+
+                    <Typography variant="body1">React</Typography>
+                    <LinearProgress variant="determinate" color="secondary" value={50} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+
+                    <Typography variant="body1">C</Typography>
+                    <LinearProgress variant="determinate" color="secondary" value={77} sx={{ height: 10, borderRadius: 5 }} />
+                </Grid>
+            </Grid>
+        </Container>
+    );
+}
 
 export default Skills;
