@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Grid, Typography } from "@mui/material";
-import Avatar from "@/assets/images/avatar.jpg";
+import Avatar from "@/assets/Images/avatar.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import AnimatedBackground from "../../../../assets/Images/Components/AnimatedBackground";
