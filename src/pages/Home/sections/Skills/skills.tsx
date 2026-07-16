@@ -13,32 +13,79 @@ const Skills = () => {
             <Grid container spacing={3} sx={{ marginTop: 3 }}>
                 <Grid item xs={12} sm={6}>
                     <Typography variant="body1">
-                        Atuo há alguns anos na área comercial, o que me proporcionou uma excelente comunicação, facilidade para trabalhar em equipe e foco em resultados. Tenho facilidade em lidar com pessoas e me adaptar a diferentes contextos, habilidades que carrego comigo também na área de tecnologia.
+                        Atuo há alguns anos na área comercial, onde desenvolvi habilidades de comunicação, trabalho em equipe e foco em resultados. Atualmente, curso Engenharia de Software e venho me especializando em desenvolvimento Front-End.
 
-                        Como estudante de Engenharia de Software (3º semestre), estou construindo uma base sólida em lógica de programação, estrutura de dados e algoritmos, com bastante prática em linguagem C. Tenho interesse especial pelo desenvolvimento Front-End, onde já possuo bons conhecimentos em HTML e CSS, e estou me aprofundando em JavaScript, React e TypeScript. Além disso, tenho experiência com prototipação de interfaces no Figma, o que me ajuda a unir design e código de forma estratégica.
+                        Tenho conhecimentos em HTML, CSS, JavaScript, React e TypeScript, além de lógica de programação, estrutura de dados e linguagem C. Também utilizo o Figma para prototipação de interfaces, buscando unir design e desenvolvimento para criar experiências funcionais e intuitivas.
 
-                        Sou curiosa, proativa e estou sempre buscando aprender mais para evoluir como desenvolvedora.
+                        Sou uma pessoa curiosa, proativa e estou sempre em busca de novos aprendizados para evoluir como desenvolvedora.
+
                     </Typography>
                 </Grid>
 
                 <Grid item xs={12} sm={6}>
                     <Typography variant="body1">HTML</Typography>
-                    <LinearProgress variant="determinate" color="secondary" value={80} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={80}
+                        sx={{ height: 10, borderRadius: 5, marginBottom: 2 }}
+                    />
 
                     <Typography variant="body1">CSS</Typography>
-                    <LinearProgress variant="determinate" color="secondary" value={70} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={70}
+                        sx={{ height: 10, borderRadius: 5, marginBottom: 2 }}
+                    />
 
                     <Typography variant="body1">JavaScript</Typography>
-                    <LinearProgress variant="determinate" color="secondary" value={65} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={70}
+                        sx={{ height: 10, borderRadius: 5, marginBottom: 2 }}
+                    />
 
                     <Typography variant="body1">TypeScript</Typography>
-                    <LinearProgress variant="determinate" color="secondary" value={50} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={60}
+                        sx={{ height: 10, borderRadius: 5, marginBottom: 2 }}
+                    />
 
                     <Typography variant="body1">React</Typography>
-                    <LinearProgress variant="determinate" color="secondary" value={50} sx={{ height: 10, borderRadius: 5, marginBottom: 2 }} />
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={85}
+                        sx={{ height: 10, borderRadius: 5, marginBottom: 2 }}
+                    />
+
+                    <Typography variant="body1">Angular</Typography>
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={20}
+                        sx={{ height: 10, borderRadius: 5, marginBottom: 2 }}
+                    />
+
+                    <Typography variant="body1">MySQL</Typography>
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={60}
+                        sx={{ height: 10, borderRadius: 5, marginBottom: 2 }}
+                    />
 
                     <Typography variant="body1">C</Typography>
-                    <LinearProgress variant="determinate" color="secondary" value={77} sx={{ height: 10, borderRadius: 5 }} />
+                    <LinearProgress
+                        variant="determinate"
+                        color="secondary"
+                        value={77}
+                        sx={{ height: 10, borderRadius: 5 }}
+                    />
                 </Grid>
             </Grid>
         </Container>

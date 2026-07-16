@@ -36,7 +36,7 @@ const resume = () => {
               </div>
 
               <StyledBox sx={{ maxWidth: "100px" }}>
-                <Typography sx={{ fontSize: "10px" }}>2024 - 2025</Typography>
+                <Typography sx={{ fontSize: "10px" }}>2024 - 2026</Typography>
               </StyledBox>
             </div>
 
@@ -65,7 +65,7 @@ const resume = () => {
                 <Typography sx={{ fontSize: "13px" }}>Engenharia de Software</Typography>
               </div>
               <StyledBox sx={{ maxWidth: "100px" }}>
-                <Typography sx={{ fontSize: "10px" }}>2024 - 2025</Typography>
+                <Typography sx={{ fontSize: "10px" }}>2024 - 2027</Typography>
               </StyledBox>
             </div>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "10px" }}>

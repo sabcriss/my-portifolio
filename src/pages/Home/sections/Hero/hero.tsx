@@ -4,6 +4,7 @@ import Avatar from "../../../../assets/images/avatar.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import AnimatedBackground from "../../../../assets/Images/Components/AnimatedBackground";
+import CurriculoPDF from "../../../../assets/Images/Components/CV - Sabrina Cristina - FullStack.pdf";
 import { styled } from "@mui/system";
 
 const StyledHero = styled("div")(({ theme }) => ({
@@ -46,7 +47,7 @@ const Hero = () => {
               I'm a software engineer
             </Typography>
             <Typography variant="body1" textAlign="justify" sx={{ mb: 4 }}>
-              Olá! Sou Sabrina Cristina, tenho 22 anos e estou no 3º semestre de Engenharia de Software. Tenho interesse em desenvolvimento Full Stack e estou em busca de oportunidades na área de TI.
+              Olá! Sou Sabrina Cristina, tenho 23 anos e estou no 6º semestre de Engenharia de Software. Tenho interesse em desenvolvimento Full Stack e estou em busca de oportunidades na área de TI.
 
               Possuo conhecimentos em HTML, CSS, C, JavaScript, React e uso o Figma para prototipação. Também estudo TypeScript, APIs, banco de dados e metodologias ágeis como Scrum. Tenho projetos pessoais e acadêmicos que reforçam minha prática e interesse na área.
 
@@ -59,7 +60,8 @@ const Hero = () => {
                   color="secondary"
                   startIcon={<DownloadIcon />}
                   component="a"
-                  href="/caminho-do-cv"
+                  href={CurriculoPDF}
+                  download="CV_Sabrina_Cristina.pdf"
                 >
                   Download CV
                 </Button>
@@ -70,7 +72,7 @@ const Hero = () => {
                   color="secondary"
                   startIcon={<PermContactCalendarIcon />}
                   component="a"
-                  href="/contato"
+                  href="#contact" 
                 >
                   Contact me
                 </Button>

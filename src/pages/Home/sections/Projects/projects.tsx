@@ -4,28 +4,28 @@ import React from "react";
 
 const projects = [
   {
-    title: "Portfólio",
-    description: "Meu portfólio pessoal, feito com React e Material UI.",
-    imageUrl: "/images/portfolio.png", 
-    link: "https://www.seuportfolio.com",
+    title: "Farma Já",
+    description: "Sistema completo de delivery de farmácias, englobando o design de telas, fluxos de checkout e listagem de produtos.",
+    imageUrl: hally, // Altere depois para a imagem mockada do Farma Já se preferir!
+    link: "https://github.com/sabcriss/FarmaJa",
   },
   {
-    title: "Minha primeira pagina web",
-    description: "Trabalho acadêmico sobre o tema livre.",
-    imageUrl: hally, 
-    link: "https://link-do-trabalho-1.com",
+    title: "Gerenciador de Restaurante",
+    description: "Aplicação Full Stack integrada para gestão de pedidos, mesas, reservas, controle de usuários e geração de relatórios.",
+    imageUrl: "/images/restaurante.png", 
+    link: "https://github.com/sabcriss/Restaurante",
   },
   {
-    title: "Trabalho de Faculdade 2",
-    description: "Outro trabalho acadêmico feito com tecnologia Y.",
-    imageUrl: "/images/faculdade2.png", 
-    link: "https://link-do-trabalho-2.com", 
+    title: "Análise de Acidentes de Trânsito",
+    description: "Projeto acadêmico em Python utilizando Streamlit para análise de dados e geração de gráficos estatísticos sobre o trânsito brasileiro.",
+    imageUrl: "/images/transito.png", 
+    link: "https://github.com/felipe-rib/Projeto_Streamlit_Novas_Tecnologias_UCB", 
   },
   {
-    title: "Jogo em C",
-    description: "Um jogo simples feito em C.",
-    imageUrl: "/images/jogo.png", 
-    link: "https://link-do-jogo.com", 
+    title: "Bibliotech",
+    description: "Sistema desenvolvido para o gerenciamento dinâmico e organização de acervos, empréstimos e usuários de uma biblioteca.",
+    imageUrl: "/images/biblioteca.png", 
+    link: "https://github.com/sabcriss/bibliotech", 
   },
 ];
 
